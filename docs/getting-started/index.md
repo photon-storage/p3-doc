@@ -6,6 +6,6 @@ has_children: true
 permalink: /docs/getting-started
 ---
 
-# Getting started
+# Getting Started
 
 to fill

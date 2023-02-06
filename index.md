@@ -6,7 +6,7 @@ nav_order: 1
 permalink: /
 ---
 
-# Welcome to Photon P3 docs
+# Welcome to Photon P3 Docs
 
 Photon P3 stands for Photon Persistent storage Pool. It offers a decentralized, reliable, fast and inexpensive data storage solution, as an alternative to Amazon S3 service.
 

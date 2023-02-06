@@ -60,3 +60,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+  notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: doc-deploy-notification
+        if: ${{ github.event_name == 'push' }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TG_DEV_GROUP_ID }}
+          token: ${{ secrets.TG_BOT_TOKEN }}
+          format: markdown
+          disable_web_page_preview: true
+          message: |
+            *New P3 Doc Deployment*
+            Repo: [p3-doc](https://github.com/photon-storage/p3-doc)
+            Commit: [${{ github.event.pull_request.head.sha }}](${{ github.event.pull_request.html_url }})
+            Author: [${{ github.event.pull_request.user.login }}](${{ github.event.pull_request.user.html_url }})
+            Message: ```text
+            ${{ github.event.pull_request.title }}
+            ```
+            Date: ${{ github.event.pull_request.updated_at }}

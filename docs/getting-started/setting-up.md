@@ -5,6 +5,6 @@ parent: Getting Started
 nav_order: 1
 ---
 
-# Setting up
+# Setting Up
 
 To fill

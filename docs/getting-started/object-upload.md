@@ -28,16 +28,16 @@ If you want to play with the P3 service. The [curl](https://curl.se/) command ca
 
 ```bash
 curl -X PUT http://p3.photon.storage:13000/gateway/v1/[OBJECT_KEY] \
-     -H "x-p3-unixtime: [UNIX_TIMESTAMP]" \
-     -H "x-p3-bucket: photon-archive-test" \
+     -H "x-p3-bucket: [OBJECT_BUCKET]" \
      -H "x-p3-content-md5: 0e7104bd7848d22bbc8adb6bed03f3a4" \
      -H "x-p3-content-type: application/octet-stream" \
+     -H "x-p3-unixtime: [UNIX_TIMESTAMP]" \
      -H "Content-Type: application/octet-stream" \
      -H "Authorization: [YOUR_ACCESS_KEY_ID]:[SIGNATURE]" \
      --data-binary "@[LOCAL_FILE_PATH]"
 ```
 
-You need to fill in desired target key `OBJECT_KEY`, current unix timestamp `UNIX_TIMESTAMP`, authentication token `YOUR_ACCESS_KEY_ID` and `SIGNATURE`, and local path to file being uploaded `LOCAL_FILE_PATH`.
+You need to fill in desired target bucket `OBJECT_BUCKET`, key `OBJECT_KEY`, current unix timestamp `UNIX_TIMESTAMP`, authentication token `YOUR_ACCESS_KEY_ID` and `SIGNATURE`, and local path to file being uploaded `LOCAL_FILE_PATH`.
 
 It is a bit hassle to calculate data MD5 and the authentication signature. Here is a [tool](https://github.com/photon-storage/p3-sdk-go/blob/main/cmd/curl/main.go) that can generate a curl command line for given parameters.
 

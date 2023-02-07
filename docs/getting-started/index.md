@@ -8,6 +8,6 @@ permalink: /docs/getting-started
 
 # Getting Started
 
-The only thing you need to access P3 service is a pair of access key ID and access key secret, which are used to authenticate incoming requests by P3 gateways.
+Learning P3 is simple if you are already familiar with the AWS S3. We deliberately make the API similar to S3 so you could easily ramp up and migrate over.
 
-If you want to get accesses to P3, please contact Photon team.
+This tutorial should get you started. Let's go!

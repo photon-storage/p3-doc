@@ -34,7 +34,6 @@ markdown: kramdown
 theme: just-the-docs
 plugins:
   - jekyll-seo-tag
-#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -66,3 +65,5 @@ exclude:
    - package-lock.json
    - Rakefile
    - README.md
+
+enable_copy_code_button: true

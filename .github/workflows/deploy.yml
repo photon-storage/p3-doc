@@ -76,8 +76,8 @@ jobs:
           disable_web_page_preview: true
           message: |
             *New P3 Docs Deployment*
-            URL: [Photon P3 Docs](https://photon-storage.github.io/p3-doc/)
-            Repo: [p3-doc](https://github.com/photon-storage/p3-doc)
+            URL: [Photon P3 Docs](https://photon-storage.github.io/photon-p3-doc/)
+            Repo: [photon-p3-doc](https://github.com/photon-storage/photon-p3-doc)
             Commit: [${{ github.event.after}}](${{ github.event.head_commit.url }})
             Author: ${{ github.event.head_commit.author.username }}
             Message: ```text

@@ -29,6 +29,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+logo: "/assets/images/logo.png"
+
 # Build settings
 markdown: kramdown
 theme: just-the-docs
@@ -65,5 +67,6 @@ exclude:
    - package-lock.json
    - Rakefile
    - README.md
+
 
 enable_copy_code_button: true

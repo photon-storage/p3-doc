@@ -10,7 +10,7 @@ permalink: /
 
 Photon P3 stands for **P**hoton **P**ersistent storage **P**ool. It offers a decentralized, reliable, fast and inexpensive data storage solution, as an alternative to Amazon S3 service.
 
-![welcome to Photon P3 docs](/assets/images/intro.png)
+![welcome to Photon P3 docs](/assets/photon_imgs/intro.png)
 
 ---
 

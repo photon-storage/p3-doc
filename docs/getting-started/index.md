@@ -12,4 +12,4 @@ Learning P3 is simple if you are already familiar with the AWS S3. We deliberate
 
 This tutorial should get you started. Let's go!
 
-![Let's get started](/assets/images/start.png)
+![Let's get started](/assets/photon_imgs/start.png)
